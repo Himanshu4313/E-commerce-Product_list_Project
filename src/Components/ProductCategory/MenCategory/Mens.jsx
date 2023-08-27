@@ -9,7 +9,7 @@ function Mens({ image, title, price }) {
             <img src={image} alt="Image" />
           </div>
           <div className="mensTitle">{title}</div>
-          <div className="mensPrice">Price: {price}</div>
+          <div className="mensPrice">Price: {price} $</div>
           <button className="Button">Add to Cart</button>
         </div>
       </div>

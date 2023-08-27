@@ -1,23 +1,18 @@
-import './Womens.css';
-function Womens({WomensDetails}){
-    return (
-        <>
-        <div className="Womens-wrapper">
-                <h1>Womens Category</h1>
-                {
-                    WomensDetails.map((wp , index) =>{
-                        <div className="womensProduct">
-                        <div className="productImage">
-                          <img src={wp.image} alt="Image" />
-                        </div>
-                        <div className="womensTitle">{wp.title}</div>
-                        <div className="womensPrice">Price: {wp.price}</div>
-                        <div className="Button">Add to Cart</div>
-                      </div>
-                    })
-                }
-            </div>
-        </>
-    );
+import "./Womens.css";
+function Womens({ image , title ,price }) {
+  return (
+    <>
+      <div className="Womens-wrapper">
+        <div className="Product">
+          <div className="productImage">
+            <img src={image} alt="Image" />
+          </div>
+          <div className="womensTitle">{title}</div>
+          <div className="womensPrice">Price: {price} $</div>
+          <button className="Button">Add to Cart</button>
+        </div>
+      </div>
+    </>
+  );
 }
 export default Womens;

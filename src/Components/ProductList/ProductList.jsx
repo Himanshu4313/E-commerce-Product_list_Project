@@ -37,8 +37,8 @@ function ProductList() {
         case "jewelery":
           updateProductDetails.jewellery.push(product);
           break;
-        case "women's clothing ":
-          updateProductDetails.jewellery.push(product);
+        case "women's clothing":
+          updateProductDetails.womens.push(product);
           break;
         case "electronics":
           updateProductDetails.electronics.push(product);
@@ -63,19 +63,58 @@ function ProductList() {
         </div>
       ) : (
         <div>
+            {/* Mens part */}
           <div className="mens-part">
             <h1 className="mens-category">Mens Category</h1>
-            <div className="product-wrapper">
-                 {productDetails.mens.map((mp) => (
-              <Mens
-                key={mp.id}
-                image={mp.image}
-                title={mp.title}
-                price={mp.price}
-              />
-            ))}
+            <div className="mens-product-wrapper">
+              {productDetails.mens.map((mp) => (
+                <Mens
+                  key={mp.id}
+                  image={mp.image}
+                  title={mp.title}
+                  price={mp.price}
+                />
+              ))}
             </div>
-           
+          </div>
+          {/* womens part */}
+          <div className="womens-part">
+            <h1 className="womens-category">Womens Category</h1>
+            <div className="womens-product-wrapper">
+              {productDetails.womens.map((wp) => (
+                  <Womens 
+                  key={wp.id} 
+                  title={wp.title}
+                 image={wp.image} 
+                 price={wp.price}/>
+              ))}
+            </div>
+          </div>
+         {/* Jewellery part */}
+         <div className="jewellery-part">
+            <h1 className="jewellery-category">Jewellery Category</h1>
+            <div className="jewellery-product-wrapper">
+              {productDetails.jewellery.map((wp) => (
+                  <Jewellery 
+                  key={wp.id} 
+                  title={wp.title}
+                 image={wp.image} 
+                 price={wp.price}/>
+              ))}
+            </div>
+          </div>
+         {/* Electronics part */}
+         <div className="electronic-part">
+            <h1 className="electronic-category">Category</h1>
+            <div className="electronic-product-wrapper">
+              {productDetails.electronics.map((ep) => (
+                  <Electronics
+                  key={ep.id} 
+                  title={ep.title}
+                 image={ep.image} 
+                 price={ep.price}/>
+              ))}
+            </div>
           </div>
         </div>
       )}

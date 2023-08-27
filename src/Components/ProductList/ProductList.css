@@ -28,3 +28,53 @@
         transform: rotate(360deg);
     }
 }
+.mens-part{
+    border: 2px solid red;
+}
+.mens-category{
+    text-align: center;
+}
+.mens-product-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.womens-part{
+    border: 2px solid blue;
+}
+.womens-category{
+    text-align: center;
+}
+.womens-product-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.jewellery-part{
+    border: 2px solid yellow;
+}
+.jewellery-category{
+    text-align: center;
+}
+.jewellery-product-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.electronic-part{
+    border: 2px solid rgb(93, 93, 15);
+}
+.electronic-category{
+    text-align: center;
+}
+.electronic-product-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}

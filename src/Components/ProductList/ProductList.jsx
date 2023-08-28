@@ -56,6 +56,7 @@ function ProductList() {
     <>
       {isLoading ? (
         <div className="loading-circle">
+          <h3>Loading...</h3>
           <div className="spainer"></div>
         </div>
       ) : (

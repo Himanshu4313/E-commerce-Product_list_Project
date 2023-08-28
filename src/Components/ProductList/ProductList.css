@@ -1,17 +1,20 @@
 .loading-circle{
-    width: 100px;
+    width: 300px;
     height: 100px;
     margin: 10px auto;
     position: relative;
     top: 180px;
     border-radius: 8px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 8px;
     background-color: #f8f4f4;
 }
+
 .spainer{
+    
     width: 64px;
     height:64px;
     border: 8px solid;

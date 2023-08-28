@@ -1,6 +1,9 @@
 .Heading {
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     text-decoration: underline;
     padding: 10px;
     letter-spacing: 1px;
+    box-shadow: 0 0 11px 1px #f504f9;
 }

@@ -5,8 +5,9 @@ function Header(){
         <>
           <div className="Heading">
             <h1>Product List</h1>
+            <SearchBox/>
           </div>
-          <SearchBox/>
+          
         </>
     );
 }

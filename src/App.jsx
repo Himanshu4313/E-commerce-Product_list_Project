@@ -1,13 +1,13 @@
 import './App.css'
 import Header from './Components/Header/Header'
-import ProductList from './Components/ProductList/ProductList'
+import CustomsRoute from './CustomRoutes/CustomRoutes'
 
 function App() {
 
   return (
     <>
        <Header/>
-       <ProductList/>
+       <CustomsRoute/>
     </>
   )
 }

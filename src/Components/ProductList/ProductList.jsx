@@ -73,6 +73,7 @@ function ProductList() {
                     title={mp.title}
                     image={mp.image}
                     price={mp.price}
+                    id={mp.id}
                     />)
                    }
                </div>
@@ -89,6 +90,7 @@ function ProductList() {
                   image={wp.image} 
                   title={wp.title} 
                   price={wp.price}
+                  id={wp.id}
                   /> )
                 }
               </div>
@@ -104,6 +106,7 @@ function ProductList() {
                     image={jp.image}
                     title={jp.title}
                     price={jp.price}
+                    id={jp.id}
                     />
                     )
                   }
@@ -120,6 +123,7 @@ function ProductList() {
                       image={ep.image}
                       title={ep.title}
                       price={ep.price}
+                      id={ep.id}
                       />)
                     }
                    </div>

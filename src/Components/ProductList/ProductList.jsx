@@ -1,10 +1,7 @@
 import { useEffect, useState } from "react";
 import "./ProductList.css";
 import axios from "axios";
-import Mens from "../ProductCategory/MenCategory/Mens";
-import Womens from "../ProductCategory/WomenCategory/Womens";
-import Jewellery from "../ProductCategory/JewelleryCategory/Jewellery";
-import Electronics from "../ProductCategory/ElectronicsCategory/Electronics";
+import PrintProductList from "../PrintProductList/PrintProductList";
 function ProductList() {
   const [isLoading, setisLoading] = useState(true);
   const [productDetails, setProductDetails] = useState({});
@@ -64,58 +61,68 @@ function ProductList() {
       ) : (
         <div>
             {/* Mens part */}
-          <div className="mens-part">
-            <h1 className="mens-category">Mens Category</h1>
-            <div className="mens-product-wrapper">
-              {productDetails.mens.map((mp) => (
-                <Mens
-                  key={mp.id}
-                  image={mp.image}
-                  title={mp.title}
-                  price={mp.price}
-                />
-              ))}
-            </div>
-          </div>
+          
+           <div className="men-part">
+               <h1>Mens Category</h1>
+               <div className="product-wrapper">
+                   {
+                    productDetails.mens.map((mp) => 
+                    <PrintProductList 
+                    key={mp.id}
+                    title={mp.title}
+                    image={mp.image}
+                    price={mp.price}
+                    />)
+                   }
+               </div>
+           </div>
           {/* womens part */}
+          
           <div className="womens-part">
-            <h1 className="womens-category">Womens Category</h1>
-            <div className="womens-product-wrapper">
-              {productDetails.womens.map((wp) => (
-                  <Womens 
-                  key={wp.id} 
-                  title={wp.title}
-                 image={wp.image} 
-                 price={wp.price}/>
-              ))}
-            </div>
+              <h1>Womens Category</h1>
+              <div className="product-wrapper">
+                {
+                  productDetails.womens.map((wp) => 
+                  <PrintProductList 
+                  key={wp.id}
+                  image={wp.image} 
+                  title={wp.title} 
+                  price={wp.price}
+                  /> )
+                }
+              </div>
           </div>
          {/* Jewellery part */}
-         <div className="jewellery-part">
-            <h1 className="jewellery-category">Jewellery Category</h1>
-            <div className="jewellery-product-wrapper">
-              {productDetails.jewellery.map((wp) => (
-                  <Jewellery 
-                  key={wp.id} 
-                  title={wp.title}
-                 image={wp.image} 
-                 price={wp.price}/>
-              ))}
-            </div>
-          </div>
+              <div className="jewellery-part">
+                <h1>Jewellery Category</h1>
+                <div className="product-wrapper">
+                  {
+                    productDetails.jewellery.map((jp) => 
+                    <PrintProductList 
+                    key={jp.id}
+                    image={jp.image}
+                    title={jp.title}
+                    price={jp.price}
+                    />
+                    )
+                  }
+                </div>
+              </div>
          {/* Electronics part */}
-         <div className="electronic-part">
-            <h1 className="electronic-category">Category</h1>
-            <div className="electronic-product-wrapper">
-              {productDetails.electronics.map((ep) => (
-                  <Electronics
-                  key={ep.id} 
-                  title={ep.title}
-                 image={ep.image} 
-                 price={ep.price}/>
-              ))}
-            </div>
-          </div>
+              <div className="electronics-part">
+                   <h1>Electronics Category</h1>
+                   <div className="product-wrapper">
+                    {
+                      productDetails.electronics.map((ep) => 
+                      <PrintProductList 
+                      key={ep.id}
+                      image={ep.image}
+                      title={ep.title}
+                      price={ep.price}
+                      />)
+                    }
+                   </div>
+              </div>
         </div>
       )}
     </>

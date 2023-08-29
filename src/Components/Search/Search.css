@@ -7,8 +7,5 @@
     padding: 15px 18px;
     font-size: 17px;
     border-radius: 5px;
-    border: 1px solid black;
-}
-#search:focus{
-       border: 2px solid blue;
+    border: 0px
 }

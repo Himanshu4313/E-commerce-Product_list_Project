@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import "./PrintProductList.css";
 function PrintProductList({ image, title, price , id }) {
+  
   return (
     <>
       <div className="single-product-container-card">
@@ -17,9 +18,15 @@ function PrintProductList({ image, title, price , id }) {
             <span>{price}$</span>
           </p>
         </div>
-        <div className="addtocartbtn">
-          <button>Add to Card</button>
-        </div>
+        
+           <div className="addtocartbtn">
+          <button onClick={() => {
+            
+          }}>Add to Card</button>
+          </div>
+         
+       
+        
       </div>
     </>
   );

@@ -1,0 +1,32 @@
+.Cart-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+
+}
+#cart{
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+#cart-icon{
+    font-size: 30px;
+}
+#countingbar{
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    /* text-align: center; */
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#countingbar{
+    position: absolute;
+    top: 15px;
+    right: 195px;
+}

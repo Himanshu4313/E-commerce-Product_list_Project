@@ -1,6 +1,6 @@
-# This project is build React.js. For learning purpose 
+# This project is build using React.js. For learning purpose 
 
-   And  three functionality In this project , but one functionality is working on ...
+   And  three functionality is exist In this project , but one functionality is working on ...
 # Functionality will be 
 1 Show all E-commerce productList from api..
 2 Show single product details.
